@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import '../Register/Register.css';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -28,8 +29,10 @@ const Form = () => {
   };
 
   return (
-    <div className="form-container">
-      <h2>Let’s get started</h2>
+    <>
+    <Sidebar />
+      <div className="form-container">
+      <h2>Let's get started</h2>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
           <label htmlFor="firstName">First name</label>
@@ -74,18 +77,6 @@ const Form = () => {
           </select>
         </div>
         <div className="input-group">
-          <label htmlFor="state">State</label>
-          <select
-            id="state"
-            name="state"
-            value={formData.state}
-            onChange={handleChange}
-          >
-            <option>Delaware</option>
-            {/* Add other states if needed */}
-          </select>
-        </div>
-        <div className="input-group">
           <label htmlFor="phoneNumber">Phone number</label>
           <input
             type="text"
@@ -108,6 +99,8 @@ const Form = () => {
         <button type="submit">GET STARTED</button>
       </form>
     </div>
+    </>
+    
   );
 };
 
