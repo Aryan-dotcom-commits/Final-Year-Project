@@ -9,21 +9,22 @@ export function RegisterForm() {
       </div>
 
       <div className="form-container">
-        <div className="form-container-data">
-          <label> First Name: <input type="text"/></label>
-          <label> Last Name: <input type="text"/></label> 
-        </div>
-
-        <div className="form-container-data">
-          <label> Email: <input type="email"/></label>
-          <label> Age: <input type="age"/></label>
-        </div>
-
-        <div className="form-container-data">
-          <label> Blood Group: <input type="text"/></label>
-        </div>
-        
+        <label> First Name: <input type="text"/></label>
       </div>
+
+      <div className="form-container">
+        <label> Last Name: <input type="text"/></label>
+      </div>
+
+      <div className="form-container">
+        <label> Age: <input type="date"/></label>
+      </div>
+
+      <div className="form-container">
+        <label> Blood Group <input type="text"/></label>
+      </div>
+
+      <button> Register </button>
     </form>
   );
 }
