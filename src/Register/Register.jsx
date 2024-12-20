@@ -3,28 +3,22 @@ import { useState } from "react";
 
 export function RegisterForm() {
   return (
-    <form className="form-container-main"> 
-      <div className="header-section">
-        <h2> Regsiter Account </h2>
+    <section className="register-section">
+      <div className="image">
+        <h2> Welcome </h2>
       </div>
 
-      <div className="form-container">
-        <label> First Name: <input type="text"/></label>
-      </div>
-
-      <div className="form-container">
-        <label> Last Name: <input type="text"/></label>
-      </div>
-
-      <div className="form-container">
-        <label> Age: <input type="date"/></label>
-      </div>
-
-      <div className="form-container">
-        <label> Blood Group <input type="text"/></label>
-      </div>
-
-      <button> Register </button>
-    </form>
+      <form className="register-form">
+        <div className="label-division">
+          <label> First Name: <input type="text"/></label>
+          <label> First Name: <input type="text"/></label>
+        </div>
+        
+        <div className="label-division">
+          <label> First Name: <input type="text"/></label>
+          <label> First Name: <input type="text"/></label>
+        </div>
+      </form>
+    </section>
   );
 }
