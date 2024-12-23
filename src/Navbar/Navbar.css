@@ -1,4 +1,26 @@
+body {
+    background-color: white;
+}
+
 section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav button {
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+}
+
+nav button:hover {
+    color: #0272FA;
 }
