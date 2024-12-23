@@ -3,22 +3,34 @@ import { useState } from "react";
 
 export function RegisterForm() {
   return (
-    <section className="register-section">
-      <div className="image">
-        <h2> Welcome </h2>
-      </div>
-
-      <form className="register-form">
-        <div className="label-division">
-          <label> First Name: <input type="text"/></label>
-          <label> First Name: <input type="text"/></label>
+    <div className="center">
+      <h1>Register</h1>
+      <form method="post">
+        <div className="txt_field">
+          <input type="text" required />
+          <span></span>
+          <label>Username</label>
         </div>
-        
-        <div className="label-division">
-          <label> First Name: <input type="text"/></label>
-          <label> First Name: <input type="text"/></label>
+        <div className="txt_field">
+          <input type="email" required />
+          <span></span>
+          <label>Email</label>
+        </div>
+        <div className="txt_field">
+          <input type="password" required />
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div className="txt_field">
+          <input type="password" required />
+          <span></span>
+          <label>Confirm Password</label>
+        </div>
+        <input type="submit" value="Sign Up" />
+        <div className="signup_link">
+          Already a member? <a href="#">Login</a>
         </div>
       </form>
-    </section>
+    </div>
   );
 }
