@@ -1,5 +1,11 @@
 import { Navbar } from "../Navbar/Navbar"
+import './Homepage.css';
 
 export function Homepage() {
-    <Navbar />
+    return(
+        <>
+            <Navbar />
+            <section> Home </section>
+        </>
+    )
 }
