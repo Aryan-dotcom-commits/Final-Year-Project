@@ -6,7 +6,7 @@ export function Navbar() {
             <div className="site-logo"> Site Logo </div>
             <nav>
                 <button> Home </button>
-                <button> Our Services </button>
+                <button> Medical Records </button>
                 <button> Find a Doctor </button>
             </nav>
             <div className="profile"> Profile </div>
