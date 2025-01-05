@@ -7,9 +7,13 @@ export function Navbar() {
             <nav>
                 <button> Home </button>
                 <button> Medical Records </button>
-                <button> Find a Doctor </button>
+                <button> Appointment </button>
+                <button> Chatbot </button>
             </nav>
-            <div className="profile"> Profile </div>
+            <div className="right-section"> 
+                <img src="" alt="Message"/>
+                <span> Profile </span>
+            </div>
         </section>
     );
 }
