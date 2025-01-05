@@ -7,20 +7,28 @@ section {
     justify-content: space-between;
     width: 90%;
     margin: 20px auto;
+    
 }
 
-nav {
+.patient-details {
+    width: 33%;
+}
+
+.right-section {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
+    width: 40%;
 }
 
-nav button {
-    background-color: #00000000;
-    border: none;
-    cursor: pointer;
+.right-section input {
+    border: 1px solid rgb(209, 209, 209);
+    text-align: center;
+    width: 70%;
 }
 
-nav button:hover {
-    color: #0272FA;
+.navbar-icon {
+    font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
 }

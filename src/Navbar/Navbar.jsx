@@ -1,17 +1,18 @@
+import React from 'react';
 import './Navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export function Navbar() {
     return (
         <section>
             <div className="site-logo"> Site Logo </div>
-            <nav>
-                <button> Home </button>
-                <button> Medical Records </button>
-                <button> Appointment </button>
-                <button> Chatbot </button>
-            </nav>
+            <div className="patient-details">
+                Patients' Details
+            </div>
             <div className="right-section"> 
-                <img src="" alt="Message"/>
+                <input type='search' placeholder='search'/>
+                <FontAwesomeIcon icon="fa-thin fa-message"  className='navbar-icon'/>
+
                 <span> Profile </span>
             </div>
         </section>
