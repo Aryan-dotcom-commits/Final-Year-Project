@@ -3,6 +3,7 @@ import './App.css'
 import {RegisterForm} from './Register/Register';
 import {LoginForm} from './Login/Login';
 import { Homepage } from './Homepage/Homepage';
+import ForgotPassword from './Forgot Password/ForgotPassword';
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
         <Routes>
           <Route path='/register' element={<RegisterForm />}/>
           <Route path='/login' element={<LoginForm />}/>
-          <Route path='' element={<Homepage />} />
+          <Route path='/' element={<Homepage />} />
+          <Route path='/reset-password' element={<ForgotPassword />}/>
         </Routes>
       </Router>
 
