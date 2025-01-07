@@ -9,3 +9,9 @@
 .profile-section {
     width: 65%;
 }
+
+.left-section {
+    box-shadow: 0, 0, 10, 2(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: 1px solid grey;
+}

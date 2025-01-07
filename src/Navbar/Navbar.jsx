@@ -7,7 +7,7 @@ export function Navbar() {
         <section>
             <div className="site-logo"> Site Logo </div>
             <div className="patient-details">
-                Patients' Details
+                Your Dashboard
             </div>
             <div className="right-section"> 
                 <input type='search' placeholder='search'/>
