@@ -44,4 +44,18 @@
     margin-top: 15px;
     background-color: #2980b9;
     width: 100%;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.image {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
 }

@@ -16,6 +16,10 @@ export function Homepage() {
                         <div className="image">
                             <img src="" alt="Profile" />
                         </div>
+                        <div className="user-details">
+                            <span> Username </span>
+                            <span> Ph number </span>
+                        </div>
                     </div>
                 </div>
                 <div className="right-section">
