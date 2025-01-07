@@ -7,19 +7,19 @@ export function Homepage() {
             <Navbar />
             <section className="dashboard">
                 <div className="left-section">
-                    <li><a> Your Dashboard </a></li>
-                    <li><a> Messages </a></li>
-                    <li><a> Chatbot </a></li>
-                </div>
-                <div className="profile-section">
-                    <div className="image">
-                        <img />
+                    <div className="nav">
+                        <button> Your Dashboard </button>
+                        <button> Messages </button>
+                        <button> Chatbot </button>
+                    </div>
+                    <div className="profile">
+                        <div className="image">
+                            <img src="" alt="Profile" />
+                        </div>
                     </div>
                 </div>
-                <div className="medicals">
-                    <div className="medical-history">
-                        Your blood group
-                    </div>
+                <div className="right-section">
+                    Medical History 
                 </div>
             </section>
         </>

@@ -1,7 +1,7 @@
 .dashboard {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     width: 90%
 }
@@ -11,7 +11,37 @@
 }
 
 .left-section {
-    box-shadow: 0, 0, 10, 2(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.left-section li a{
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 30px;
     border-radius: 15px;
-    border: 1px solid grey;
+}
+
+.nav button {
+    background-color: #00000000;
+    border: none;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    background-color: #2980b9;
+    width: 100%;
 }
