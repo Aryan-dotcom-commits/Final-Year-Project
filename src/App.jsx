@@ -4,6 +4,7 @@ import {RegisterForm} from './Register/Register';
 import {LoginForm} from './Login/Login';
 import { Homepage } from './Homepage/Homepage';
 import ForgotPassword from './Forgot Password/ForgotPassword';
+import Messages from './Messages/Messages';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path='/login' element={<LoginForm />}/>
           <Route path='/' element={<Homepage />} />
           <Route path='/reset-password' element={<ForgotPassword />}/>
+          <Route path='/message' element={<Messages />}/>
         </Routes>
       </Router>
 
