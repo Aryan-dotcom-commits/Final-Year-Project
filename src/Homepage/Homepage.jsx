@@ -1,8 +1,8 @@
-import { Navbar } from "../Navbar/Navbar"
-import './Homepage.css';
+import { Navbar } from "../Navbar/Navbar";
+import "./Homepage.css";
 
 export function Homepage() {
-    return(
+    return (
         <>
             <Navbar />
             <section className="dashboard">
@@ -22,10 +22,27 @@ export function Homepage() {
                         </div>
                     </div>
                 </div>
+
                 <div className="right-section">
-                    Medical History 
+                    <h2>Medical History</h2>
+                    <div className="medical-history">
+                        <div className="history-item">
+                            <h3>Blood Group</h3>
+                            <p>O+</p>
+                        </div>
+
+                        <div className="history-item">
+                            <h3>Upcoming Appointments</h3>
+                            <p>Dr. John Doe - Jan 25, 2025</p>
+                        </div>
+
+                        <div className="history-item">
+                            <h3>Previous Checkups</h3>
+                            <p>Annual Physical - Dec 10, 2024</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
-    )
+    );
 }
