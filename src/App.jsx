@@ -5,6 +5,7 @@ import {LoginForm} from './Login/Login';
 import { Homepage } from './Homepage/Homepage';
 import ForgotPassword from './Forgot Password/ForgotPassword';
 import Messages from './Messages/Messages';
+import { Chatbot } from './Chatbot/Chatbot';
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
           <Route path='/login' element={<LoginForm />}/>
           <Route path='/' element={<Homepage />} />
           <Route path='/reset-password' element={<ForgotPassword />}/>
-          <Route path='/message' element={<Messages />}/>
+          <Route path='/messages' element={<Messages />}/>
+          <Route path='/chatbot' element={<Chatbot />}/>
         </Routes>
       </Router>
 

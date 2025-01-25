@@ -9,7 +9,7 @@ export function Navbar() {
             <div className="patient-details">
                 Your Dashboard
             </div>
-            <div className="right-section"> 
+            <div className="search-profile"> 
                 <input type='search' placeholder='search'/>
                 <FontAwesomeIcon icon="fa-thin fa-message"  className='navbar-icon'/>
 

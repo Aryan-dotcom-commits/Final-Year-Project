@@ -1,5 +1,6 @@
 import { Navbar } from "../Navbar/Navbar";
 import "./Homepage.css";
+import { Calendar } from 'react-calendar';
 
 export function Homepage() {
     return (
@@ -8,10 +9,13 @@ export function Homepage() {
             <section className="dashboard">
                 <div className="left-section">
                     <div className="nav">
-                        <button> Your Dashboard </button>
-                        <button> Messages </button>
-                        <button> Chatbot </button>
+                        <button onClick={() => window.location.href = "#"}> Your Dashboard </button>
+                        <button onClick={() => window.location.href = "/messages"}> Messages </button>
+                        <button onClick={() => window.location.href = "/chatbot"}> Chatbot </button>
                     </div>
+                </div>
+
+                <div className="middle-section">
                     <div className="profile">
                         <div className="image">
                             <img src="" alt="Profile" />
@@ -37,8 +41,10 @@ export function Homepage() {
                         </div>
 
                         <div className="history-item">
-                            <h3>Previous Checkups</h3>
-                            <p>Annual Physical - Dec 10, 2024</p>
+                            <h3>Your Appointments </h3>
+                            <div className="calender">
+                                <Calendar />
+                            </div>
                         </div>
                     </div>
                 </div>
