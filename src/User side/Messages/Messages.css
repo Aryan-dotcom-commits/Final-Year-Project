@@ -1,0 +1,94 @@
+/* General styles */
+.message-box {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Left Sidebar (User List) */
+.messages-profile {
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.messages-profile h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.messages-profile input[type='search'] {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-list {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.user-list:hover {
+    background: #ddd;
+}
+
+.user-list img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #ccc;
+}
+
+.user-list p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Chat Area */
+.message-area {
+    width: 70%;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.chat-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.chat-profile p {
+    font-size: 18px;
+    margin: 0 10px;
+    flex-grow: 1;
+}
+
+.chat-profile input[type='search'] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
