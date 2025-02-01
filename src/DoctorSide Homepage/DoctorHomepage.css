@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+  }
+  
+  .doctor-dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #004d7a;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .navbar__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar__menu {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .navbar__menu li {
+    margin-left: 20px;
+  }
+  
+  .navbar__menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  /* Dashboard Content */
+  .dashboard-content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  /* Doctor Profile Section */
+  .doctor-profile {
+    background: white;
+    display: flex;
+    padding: 20px;
+    border-radius: 8px;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .doctor-profile__image {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .doctor-profile__info h2 {
+    margin: 0 0 5px;
+    font-size: 1.5rem;
+  }
+  
+  .doctor-profile__info p {
+    margin: 3px 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Quick Actions Section */
+  .quick-actions {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .action-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .action-button.emergency {
+    background-color: #d9534f;
+  }
+  
+  /* Dashboard Overview */
+  .dashboard-overview {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .appointments-list,
+  .notifications-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .appointments-list li,
+  .notifications-list li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* Announcements */
+  .announcements {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  

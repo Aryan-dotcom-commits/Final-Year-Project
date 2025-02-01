@@ -1,11 +1,12 @@
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import './App.css'
-import {RegisterForm} from './Register/Register';
-import {LoginForm} from './Login/Login';
-import { Homepage } from './Homepage/Homepage';
-import ForgotPassword from './Forgot Password/ForgotPassword';
-import Messages from './Messages/Messages';
-import { Chatbot } from './Chatbot/Chatbot';
+import {RegisterForm} from './User Side/Register/Register';
+import {LoginForm} from './User Side/Login/Login';
+import { Homepage } from './User Side/Homepage/Homepage';
+import ForgotPassword from './User Side/Forgot Password/ForgotPassword';
+import Messages from './User Side/Messages/Messages';
+import { Chatbot } from './User Side/Chatbot/Chatbot';
+import   DoctorDashboard  from './DoctorSide Homepage/DoctorHomepage';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path='/reset-password' element={<ForgotPassword />}/>
           <Route path='/messages' element={<Messages />}/>
           <Route path='/chatbot' element={<Chatbot />}/>
+          <Route path='/dashboard' element={<DoctorDashboard/>}/>
         </Routes>
       </Router>
 
